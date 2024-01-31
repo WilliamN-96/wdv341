@@ -1,7 +1,10 @@
 <?php
 
-$frontLanguages = array(" PHP ", " HTML ", " JavaScript ");
-
+$frontLanguages = ["PHP", "HTML","JavaScript"];
+$yourName = "Will Nelson";
+$number1 = 17;
+$number2 = 24;
+$total = $number1 + $number2;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,28 +13,32 @@ $frontLanguages = array(" PHP ", " HTML ", " JavaScript ");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        let yourName = "Will Nelson";
-        let number1 = 17;
-        let number2 = 24;
-        let total;
-        let frontLanguages1 = [" PHP", " HTML ", " JavaScript "];
+
+        let frontLang = [<?php
+            foreach($frontLanguages as $language){
+                echo '"'.$language.'", ';
+            }
+        ?>];
+
+        console.log(frontLang);
+
     </script>
 </head>
 <body>
     <h1>PHP Basics</h1>
     <?php
      echo 
-     "<h2><script>document.write(yourName);</script></h2>";
+     "<h2>$yourName</h2>";
     ?>
 
     <?php 
     
     echo "<p>
-    First number is: <script>document.write(number1);</script>.
+    First number is: $number1.
 
-    Second number is: <script>document.write(number2);</script>. 
+    Second number is: $number2.
 
-    Their sum is: <script>document.write(total=number1+number2);</script>.
+    Their sum is: $total.
     </p>";
     
     ?>
@@ -48,9 +55,8 @@ $frontLanguages = array(" PHP ", " HTML ", " JavaScript ");
     </p>
     <h1>JavaScript Array</h1>
     <script>
-        let convertArray = <?php echo json_encode($frontLanguages);?>
-
-        document.write(convertArray);
+        //Changed it to the other array method.
+        document.write(frontLang);
     </script>
 </body>
 </html>
