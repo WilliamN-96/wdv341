@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#container{
+        width:960px;
+        margin:auto;
+        padding:10px;
+        background-color:white;
+        border:thin solid black;
+    }
+    </style>
+</head>
+<body>
+    
+    <div id="container"><!--Container for the form-->
+    <h1>WDV 341 Intro to PHP</h1>
+    <h2>Image Uploader Assignment</h2>
+    <form method="post" enctype="multipart/form-data" action="fileUploadAssignment.php"><!--The form for file upload-->
+
+        <p>
+            <label for="fileUpload">Upload File Here:</label>
+            <input type="file" name="newFile" id="newFile">
+        </p>
+
+        <p>
+            <input type="submit" name="submit" value="Upload File">
+            <input type="reset">
+        </p>
+
+    </form><!--Close the form-->
+    </div><!--Close the div containter-->
+</body>
+</html>
