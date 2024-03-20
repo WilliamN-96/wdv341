@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <style>
+        label{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body id="container">
+
+    <main>
+    <h1>Contact Me Here</h1>
+    <form method="POST" action="formHandler.php">
+        <br><label for="contact_name">Name:</label>
+        <input type="text" name="name" id="name">
+
+        <br>
+
+        <br><label for="contact_email">Email:</label>
+        <input type="email" name="email" id="email">
+
+        <br>
+
+        <br><label for="contactReason">Reason For Contact:</label>
+        <select name="contact_options" id="contact_options">
+            <option value="Default">Select an option</option>
+            <option value="Work">Past work</option>
+            <option value="Employment">Employment</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <br>
+
+        <br><label for="contactMessage">Message:</label>
+        <br><textarea name="message" id="message" type="text" rows="8" cols="75"></textarea>
+
+        <br>
+
+        <p>
+        <input type="submit" name="Submit">
+        <input type="reset" name="Reset">
+        </p>
+    </main>
+    </form>
+</body>
+</html>
