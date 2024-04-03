@@ -5,9 +5,9 @@
 */
 
 $servername =  "localhost";
-$database = "wdv341";
+$database = "wnelson3_wdv341";
 
-$username = "root";     //to the database
+$username = "wnelson3_wdv341";     //to the database
 $password = "";     //to the database
 
 try {
