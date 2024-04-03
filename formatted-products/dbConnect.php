@@ -5,10 +5,10 @@
 */
 
 $servername =  "localhost";
-$database = "wdv341";
+$database = "wnelson3_products";
 
-$username = "root";     //to the database
-$password = "";     //to the database
+$username = "wnelson3_products";     //to the database
+$password = "T3sting-products";     //to the database
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$database", $username, $password);
