@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="adCSS.css" type="text/css">
+</head>
+<body>
+    <div class="adContainer" id="bannerAd">
+    <h2>Coming soon: Option to send recipe ideas to be featured on out site!</h2>
+    <p>Sign up for an account now to be able to send <em>your</em> ideas in!</p>
+    <a href="../signUp.php" target="_blank"><button>Sign up here</button></a> <button id="closeAd">Close</button>
+    </div>
+</body>
+<script>
+       document.getElementById("closeAd").addEventListener("click", function(){
+        document.querySelector("#bannerAd").style.display = "none";
+       });
+</script>
+</html>

@@ -1,0 +1,76 @@
+/* scss file for Recipe Lobby */
+#background {
+  background-image: url("../images/granite.jpg");
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.adminPage {
+  background-color: whitesmoke;
+  border: 2px black solid;
+  padding: auto;
+  margin: auto;
+}
+
+div.container {
+  text-align: center;
+  background-color: rgb(211, 211, 211);
+  max-height: 3500px;
+}
+
+nav.navbar {
+  position: sticky;
+  background-color: rgb(225, 238, 48);
+  align-items: center;
+  color: black;
+}
+
+.embed-responsive {
+  position: relative;
+  bottom: -300px;
+  left: 350px;
+  margin: 0 auto;
+  max-width: 1320px;
+  z-index: 2;
+}
+
+.logInButton {
+  margin-left: auto;
+  padding-left: 10px;
+  border-radius: 4px;
+}
+
+.dropdown-menu {
+  border-radius: 4px;
+}
+
+.navbar {
+  font-weight: bold;
+}
+
+.card-title {
+  text-decoration: underline;
+}
+
+div.subBox {
+  border: 2px black solid;
+  width: auto;
+  background-color: whitesmoke;
+}
+
+.subList {
+  border: 2px solid black;
+  width: auto;
+  background-color: whitesmoke;
+}
+
+ul {
+  text-align: left;
+  font-weight: bold;
+}
+
+p {
+  font-weight: bold;
+}/*# sourceMappingURL=recipeLobby.css.map */
